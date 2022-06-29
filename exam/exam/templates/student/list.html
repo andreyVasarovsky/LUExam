@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Students</title>
+</head>
+<body>
+<div>
+    <ul>
+        {% for student in students %}
+        <li>
+            #{{student.id}}
+            <h1>{{ student.name }}</h1>
+            <p>Grades: {{ student.grades }}</p>
+            <p>Average grade: {{ student.average_grade }}</p>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
+</body>
+</html>
